@@ -1,7 +1,7 @@
 package com.fml.calculator
 
 // Based on https://rosettacode.org/wiki/Combinations_with_repetitions#Kotlin
-class CombosWithReps<T>(val comboSize: Int, val items: List<T>) {
+class CombosWithReps<T>(private val comboSize: Int, private val items: List<T>) {
     private val combination = IntArray(comboSize)
     private var count = 0
     private val itemsSize = items.size
